@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 425">
+  <defs>
+    <linearGradient id="proj6Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f" />
+      <stop offset="50%" style="stop-color:#1a0a2e" />
+      <stop offset="100%" style="stop-color:#0a1a2e" />
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#00ffff;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="glow2" cx="70%" cy="70%" r="60%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="680" height="425" fill="url(#proj6Bg)"/>
+  <ellipse cx="200" cy="150" rx="200" ry="150" fill="url(#glow1)"/>
+  <ellipse cx="480" cy="300" rx="200" ry="150" fill="url(#glow2)"/>
+  <g stroke="#00ffff" stroke-width="1" fill="none" opacity="0.3">
+    <circle cx="340" cy="212" r="120" stroke-dasharray="20,10"/>
+    <circle cx="340" cy="212" r="90"/>
+    <circle cx="340" cy="212" r="60"/>
+    <circle cx="340" cy="212" r="30"/>
+    <path d="M340 82 L340 182 M340 242 L340 342 M222 212 L310 212 M370 212 L458 212"/>
+    <g stroke="#ff00ff">
+      <circle cx="340" cy="212" r="100" stroke-dasharray="15,5" transform="rotate(45 340 212)"/>
+      <circle cx="340" cy="212" r="70" stroke-dasharray="15,5" transform="rotate(-45 340 212)"/>
+    </g>
+  </g>
+  <g fill="#00ffff" opacity="0.6">
+    <circle cx="340" cy="212" r="8"/>
+    <circle cx="260" cy="180" r="4"/>
+    <circle cx="420" cy="180" r="4"/>
+    <circle cx="260" cy="244" r="4"/>
+    <circle cx="420" cy="244" r="4"/>
+  </g>
+  <g fill="#ff00ff" opacity="0.6">
+    <circle cx="300" cy="212" r="5"/>
+    <circle cx="380" cy="212" r="5"/>
+    <circle cx="340" cy="172" r="5"/>
+    <circle cx="340" cy="252" r="5"/>
+  </g>
+  <text x="340" y="395" font-family="Rajdhani, sans-serif" font-size="24" font-weight="700" fill="#00ffff" text-anchor="middle" opacity="0.5">3D PORTFOLIO</text>
+  <text x="340" y="415" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff00ff" text-anchor="middle" opacity="0.4">Three.js • React Three Fiber • GLSL • GSAP</text>
+</svg>

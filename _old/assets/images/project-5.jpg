@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 425">
+  <defs>
+    <linearGradient id="proj5Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d14" />
+      <stop offset="100%" style="stop-color:#1a1a0a" />
+    </linearGradient>
+    <linearGradient id="proj5Accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffff00" />
+      <stop offset="100%" style="stop-color:#ff8800" />
+    </linearGradient>
+  </defs>
+  <rect width="680" height="425" fill="url(#proj5Bg)"/>
+  <rect x="2" y="2" width="676" height="421" fill="none" stroke="url(#proj5Accent)" stroke-width="2" rx="8"/>
+  <g fill="#0a0a0f" stroke="url(#proj5Accent)" stroke-width="1" opacity="0.4">
+    <rect x="40" y="40" width="600" height="345" rx="6"/>
+    <text x="340" y="100" font-family="JetBrains Mono, monospace" font-size="14" fill="url(#proj5Accent)" text-anchor="middle">$ portfolio-cli init my-project</text>
+    <text x="340" y="130" font-family="JetBrains Mono, monospace" font-size="12" fill="#00ffff" text-anchor="middle">[OK] Scaffolding React + TypeScript project</text>
+    <text x="340" y="150" font-family="JetBrains Mono, monospace" font-size="12" fill="#00ff88" text-anchor="middle">[OK] Installing dependencies...</text>
+    <text x="340" y="170" font-family="JetBrains Mono, monospace" font-size="12" fill="#ffff00" text-anchor="middle">[OK] Configuring ESLint + Prettier</text>
+    <text x="340" y="190" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff00ff" text-anchor="middle">[OK] Setting up Git hooks</text>
+    <text x="340" y="210" font-family="JetBrains Mono, monospace" font-size="12" fill="#00ffff" text-anchor="middle">[OK] Creating GitHub Actions workflow</text>
+    <text x="340" y="230" font-family="JetBrains Mono, monospace" font-size="12" fill="#00ff88" text-anchor="middle">[OK] Project ready!</text>
+    <rect x="100" y="270" width="480" height="120" rx="6" fill="none" stroke="url(#proj5Accent)" stroke-dasharray="5,5"/>
+    <text x="340" y="310" font-family="JetBrains Mono, monospace" font-size="12" fill="#ffff00" text-anchor="middle">[PKG] 2.5k+ Stars  -  15k+ Weekly Downloads</text>
+    <text x="340" y="335" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff8800" text-anchor="middle">[TEAM] 40+ Contributors  -  25+ Community Plugins</text>
+    <text x="340" y="360" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff00ff" text-anchor="middle">[TOOL] Extensible Plugin Architecture</text>
+  </g>
+  <text x="340" y="395" font-family="Rajdhani, sans-serif" font-size="24" font-weight="700" fill="url(#proj5Accent)" text-anchor="middle" opacity="0.5">CLI TOOLKIT</text>
+  <text x="340" y="415" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffff00" text-anchor="middle" opacity="0.4">Node.js - TypeScript - Commander.js - Open Source</text>
+</svg>

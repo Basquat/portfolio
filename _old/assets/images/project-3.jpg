@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 425">
+  <defs>
+    <linearGradient id="proj3Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d14" />
+      <stop offset="100%" style="stop-color:#1a0a1a" />
+    </linearGradient>
+    <linearGradient id="proj3Accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00ff" />
+      <stop offset="100%" style="stop-color:#ff6600" />
+    </linearGradient>
+  </defs>
+  <rect width="680" height="425" fill="url(#proj3Bg)"/>
+  <rect x="2" y="2" width="676" height="421" fill="none" stroke="url(#proj3Accent)" stroke-width="2" rx="8"/>
+  <g stroke="url(#proj3Accent)" stroke-width="1.5" fill="none" opacity="0.4">
+    <circle cx="200" cy="150" r="60"/>
+    <circle cx="480" cy="150" r="60"/>
+    <circle cx="200" cy="320" r="60"/>
+    <circle cx="480" cy="320" r="60"/>
+    <path d="M260 150 L420 150 M200 210 L200 260 M480 210 L480 260 M260 320 L420 320"/>
+    <path d="M200 150 L200 90 M200 150 L140 150 M480 150 L480 90 M480 150 L540 150 M200 320 L200 380 M200 320 L140 320 M480 320 L480 380 M480 320 L540 320"/>
+    <circle cx="340" cy="215" r="40" stroke-dasharray="10,5"/>
+    <path d="M300 215 L260 215 M380 215 L420 215 M340 175 L340 135 M340 255 L340 295"/>
+  </g>
+  <g fill="url(#proj3Accent)" opacity="0.3">
+    <circle cx="200" cy="150" r="15"/>
+    <circle cx="480" cy="150" r="15"/>
+    <circle cx="200" cy="320" r="15"/>
+    <circle cx="480" cy="320" r="15"/>
+    <circle cx="340" cy="215" r="10"/>
+  </g>
+  <text x="340" y="395" font-family="Rajdhani, sans-serif" font-size="24" font-weight="700" fill="url(#proj3Accent)" text-anchor="middle" opacity="0.5">MICROSERVICES PLATFORM</text>
+  <text x="340" y="415" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff00ff" text-anchor="middle" opacity="0.4">Go • gRPC • Kubernetes • Istio • Kafka</text>
+</svg>

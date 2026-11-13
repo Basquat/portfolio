@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Cyberpunk 2077 - Desenvolvedor Full Stack | Projetos, Skills, Experiência">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio Cyberpunk 2077 | Desenvolvedor Full Stack">
+  <meta property="og:description" content="Explore meu portfolio com tema Cyberpunk 2077 - Projetos, tecnologias e experiência">
+  <meta property="og:image" content="assets/images/og-image.png">
+  <meta property="og:url" content="https://seuusuario.github.io/portfolio/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfolio Cyberpunk 2077 | Desenvolvedor Full Stack">
+  <meta name="twitter:description" content="Explore meu portfolio com tema Cyberpunk 2077">
+  <meta name="twitter:image" content="assets/images/og-image.png">
+
+  <!-- Preload Critical Assets -->
+  <link rel="preload" as="style" href="assets/css/main.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yK0.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/rajdhani/v18/LDItaoyNOAY6Uewc665BT5vyCQ.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="assets/images/manifest.json">
+
+  <title>Portfolio Cyberpunk 2077 | Desenvolvedor Full Stack</title>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen" role="status" aria-label="Carregando portfolio">
+    <div class="loading-terminal" aria-hidden="true">
+      <div class="loading-line"><span class="loading-prompt">root@portfolio:~$</span> <span class="loading-path">iniciando_sistema</span> <span class="loading-cursor">_</span></div>
+      <div class="loading-line"><span class="loading-prompt">root@portfolio:~$</span> <span class="loading-path">carregando_neural_link</span> <span class="loading-cursor">_</span></div>
+      <div class="loading-line"><span class="loading-prompt">root@portfolio:~$</span> <span class="loading-path">sincronizando_memoria</span> <span class="loading-cursor">_</span></div>
+      <div class="loading-line"><span class="loading-prompt">root@portfolio:~$</span> <span class="loading-path">renderizando_interface</span> <span class="loading-cursor">_</span></div>
+      <div class="loading-line"><span class="loading-prompt">root@portfolio:~$</span> <span class="loading-path">quase_pronto</span> <span class="loading-cursor">_</span></div>
+      <div class="loading-line"><span class="loading-prompt">root@portfolio:~$</span> <span class="loading-path">sistema_online</span> <span class="loading-cursor">_</span></div>
+    </div>
+    <div class="loading-bar" aria-hidden="true">
+      <div class="loading-progress" id="loading-progress"></div>
+      <span class="loading-percent" id="loading-percent">0%</span>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header" role="banner">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Início - Portfolio">PORTFOLIO</a>
+
+      <nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link" data-section="about">Sobre</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Projetos</a></li>
+          <li><a href="#experience" class="nav-link" data-section="experience">Experiência</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contato</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#contact" class="btn btn-primary btn-sm">Contratar</a>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" role="main">
+    <!-- Hero Section -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="hero-neon-lines" id="hero-neon-lines"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge" aria-hidden="true">
+          <span>◢ DISPONÍVEL PARA TRABALHO</span>
+        </div>
+
+        <h1 class="hero-title" id="hero-title">
+          <span class="hero-title-line">OLÁ, SOU</span>
+          <span class="hero-title-line hero-title-accent" data-text="DESENVOLVEDOR">DESENVOLVEDOR</span>
+          <span class="hero-title-line">FULL STACK</span>
+        </h1>
+
+        <p class="hero-subtitle" id="hero-subtitle">
+          Construindo experiências digitais imersivas com código limpo, arquitetura escalável e estética cyberpunk.
+          <br><strong>React • Node.js • TypeScript • Cloud • DevOps</strong>
+        </p>
+
+        <div class="hero-stats" aria-label="Estatísticas">
+          <div class="stat-item">
+            <div class="stat-value" data-count="50">0</div>
+            <div class="stat-label">Projetos Entregues</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-count="4">0</div>
+            <div class="stat-label">Anos Experiência</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-count="12">0</div>
+            <div class="stat-label">Tecnologias</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-count="98">0</div>
+            <div class="stat-label">Satisfação %</div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary btn-lg">Ver Projetos</a>
+          <a href="#contact" class="btn btn-secondary btn-lg">Vamos Conversar</a>
+          <a href="assets/files/cv.pdf" class="btn btn-ghost btn-lg" download>Baixar CV</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>ROLE PARA BAIXO</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about reveal" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header reveal-left">
+          <span class="section-tag">01. SOBRE MIM</span>
+          <h2 class="section-title" id="about-title">Quem está por trás do código</h2>
+          <p class="section-description">Desenvolvedor apaixonado por criar soluções elegantes para problemas complexos</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image reveal-right stagger-1">
+            <img src="assets/images/about-photo.jpg" alt="Foto do desenvolvedor no ambiente de trabalho" loading="lazy">
+          </div>
+
+          <div class="about-content reveal-left stagger-2">
+            <p class="about-intro">
+              Sou um <strong>Desenvolvedor Full Stack</strong> com mais de 4 anos de experiência construindo aplicações web modernas, escaláveis e performáticas.
+              Minha jornada começou com curiosidade sobre como as coisas funcionam "por baixo do capô" e evoluiu para uma paixão por arquitetura de software, clean code e experiência do desenvolvedor.
+            </p>
+
+            <div class="about-highlights">
+              <article class="highlight-item reveal stagger-3">
+                <div class="highlight-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 18 2 12 8 6"></polyline>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <h4>Clean Architecture</h4>
+                  <p>SOLID principles, Domain-Driven Design, testabilidade e manutenibilidade</p>
+                </div>
+              </article>
+
+              <article class="highlight-item reveal stagger-4">
+                <div class="highlight-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <h4>Performance First</h4>
+                  <p>Core Web Vitals, bundle optimization, lazy loading, caching strategies</p>
+                </div>
+              </article>
+
+              <article class="highlight-item reveal stagger-5">
+                <div class="highlight-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <h4>Team Collaboration</h4>
+                  <p>Code review, mentoring, agile workflows, documentação técnica</p>
+                </div>
+              </article>
+
+              <article class="highlight-item reveal stagger-6">
+                <div class="highlight-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <h4>Continuous Learning</h4>
+                  <p>Novas tecnologias, open source, tech talks, certificações</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="about-tags" aria-label="Tecnologias e ferramentas">
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag">AWS</span>
+              <span class="tag">GraphQL</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills reveal" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header reveal-left">
+          <span class="section-tag">02. STACK TECNOLÓGICA</span>
+          <h2 class="section-title" id="skills-title">Ferramentas do meu arsenal</h2>
+          <p class="section-description">Tecnologias que domino e utilizo no dia a dia para entregar soluções robustas</p>
+        </div>
+
+        <div class="skills-categories" role="tablist" aria-label="Categorias de skills">
+          <button class="skill-category-btn active" role="tab" aria-selected="true" data-category="all">Todas</button>
+          <button class="skill-category-btn" role="tab" aria-selected="false" data-category="frontend">Frontend</button>
+          <button class="skill-category-btn" role="tab" aria-selected="false" data-category="backend">Backend</button>
+          <button class="skill-category-btn" role="tab" aria-selected="false" data-category="devops">DevOps</button>
+          <button class="skill-category-btn" role="tab" aria-selected="false" data-category="database">Database</button>
+          <button class="skill-category-btn" role="tab" aria-selected="false" data-category="tools">Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid" role="tabpanel">
+          <!-- Frontend -->
+          <article class="skill-card" data-category="frontend" data-level="95">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">React</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="React proficiency">
+              <div class="skill-level-bar" style="--level: 95%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend" data-level="90">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="12" rx="10" ry="10"></ellipse>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">TypeScript</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="TypeScript proficiency">
+              <div class="skill-level-bar" style="--level: 90%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend" data-level="88">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Next.js</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Next.js proficiency">
+              <div class="skill-level-bar" style="--level: 88%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend" data-level="85">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M8 21h8"></path>
+                <path d="M12 17v4"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Vue.js</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Vue.js proficiency">
+              <div class="skill-level-bar" style="--level: 85%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend" data-level="80">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Tailwind CSS</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Tailwind CSS proficiency">
+              <div class="skill-level-bar" style="--level: 80%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend" data-level="82">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="skill-name">GraphQL</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="GraphQL proficiency">
+              <div class="skill-level-bar" style="--level: 82%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend" data-level="75">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="skill-name">Three.js</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Three.js proficiency">
+              <div class="skill-level-bar" style="--level: 75%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend" data-level="78">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 14.21 3 3 3 0 0 0 21 12.79z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Framer Motion</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Framer Motion proficiency">
+              <div class="skill-level-bar" style="--level: 78%"></div>
+            </div>
+          </article>
+
+          <!-- Backend -->
+          <article class="skill-card" data-category="backend" data-level="92">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Node.js</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js proficiency">
+              <div class="skill-level-bar" style="--level: 92%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="backend" data-level="85">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M8 21h8"></path>
+                <path d="M12 17v4"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">NestJS</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="NestJS proficiency">
+              <div class="skill-level-bar" style="--level: 85%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="backend" data-level="80">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency">
+              <div class="skill-level-bar" style="--level: 80%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="backend" data-level="78">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="skill-name">Go</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Go proficiency">
+              <div class="skill-level-bar" style="--level: 78%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="backend" data-level="85">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 14.21 3 3 3 0 0 0 21 12.79z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">REST APIs</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="REST APIs proficiency">
+              <div class="skill-level-bar" style="--level: 85%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="backend" data-level="80">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Microservices</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Microservices proficiency">
+              <div class="skill-level-bar" style="--level: 80%"></div>
+            </div>
+          </article>
+
+          <!-- DevOps -->
+          <article class="skill-card" data-category="devops" data-level="85">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 class="skill-name">Docker</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Docker proficiency">
+              <div class="skill-level-bar" style="--level: 85%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="devops" data-level="75">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M8 21h8"></path>
+                <path d="M12 17v4"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Kubernetes</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Kubernetes proficiency">
+              <div class="skill-level-bar" style="--level: 75%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="devops" data-level="80">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">AWS</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="AWS proficiency">
+              <div class="skill-level-bar" style="--level: 80%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="devops" data-level="78">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">CI/CD</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="CI/CD proficiency">
+              <div class="skill-level-bar" style="--level: 78%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="devops" data-level="72">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 14.21 3 3 3 0 0 0 21 12.79z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Terraform</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="Terraform proficiency">
+              <div class="skill-level-bar" style="--level: 72%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="devops" data-level="75">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Linux</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Linux proficiency">
+              <div class="skill-level-bar" style="--level: 75%"></div>
+            </div>
+          </article>
+
+          <!-- Database -->
+          <article class="skill-card" data-category="database" data-level="88">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">PostgreSQL</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="PostgreSQL proficiency">
+              <div class="skill-level-bar" style="--level: 88%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="database" data-level="80">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">MongoDB</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="MongoDB proficiency">
+              <div class="skill-level-bar" style="--level: 80%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="database" data-level="85">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Redis</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Redis proficiency">
+              <div class="skill-level-bar" style="--level: 85%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="database" data-level="75">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">MySQL</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="MySQL proficiency">
+              <div class="skill-level-bar" style="--level: 75%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="database" data-level="78">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Prisma</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Prisma proficiency">
+              <div class="skill-level-bar" style="--level: 78%"></div>
+            </div>
+          </article>
+
+          <!-- Tools -->
+          <article class="skill-card" data-category="tools" data-level="90">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Git</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Git proficiency">
+              <div class="skill-level-bar" style="--level: 90%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="tools" data-level="85">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M8 21h8"></path>
+                <path d="M12 17v4"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">VS Code</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="VS Code proficiency">
+              <div class="skill-level-bar" style="--level: 85%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="tools" data-level="80">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Jest/Vitest</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Testing proficiency">
+              <div class="skill-level-bar" style="--level: 80%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="tools" data-level="75">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="skill-name">Postman</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Postman proficiency">
+              <div class="skill-level-bar" style="--level: 75%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="tools" data-level="78">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 14.21 3 3 3 0 0 0 21 12.79z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Figma</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Figma proficiency">
+              <div class="skill-level-bar" style="--level: 78%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="tools" data-level="82">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-name">Storybook</h3>
+            <div class="skill-level" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Storybook proficiency">
+              <div class="skill-level-bar" style="--level: 82%"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects reveal" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header reveal-left">
+          <span class="section-tag">03. PROJETOS DESTAQUE</span>
+          <h2 class="section-title" id="projects-title">O que eu construí</h2>
+          <p class="section-description">Uma seleção de projetos que demonstram minha experiência técnica e visão de produto</p>
+        </div>
+
+        <div class="projects-filter" role="tablist" aria-label="Filtrar projetos por categoria">
+          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">Todos</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="backend">Backend</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="open-source">Open Source</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid" role="tabpanel">
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-category="fullstack" tabindex="0">
+            <div class="project-image">
+              <img src="assets/images/project-1.jpg" alt="Dashboard E-commerce Analytics" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/usuario/ecommerce-dashboard" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://ecommerce-dashboard.demo.com" class="project-link" aria-label="Ver demo ao vivo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Full Stack</span>
+              <h3 class="project-title">E-Commerce Analytics Dashboard</h3>
+              <p class="project-description">Dashboard completo para e-commerce com métricas em tempo real, relatórios automatizados, gestão de inventário e integração com múltiplos gateways de pagamento.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js 14</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Prisma</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">Recharts</span>
+                <span class="tech-tag">Stripe</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-category="frontend" tabindex="0">
+            <div class="project-image">
+              <img src="assets/images/project-2.jpg" alt="Design System Component Library" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/usuario/design-system" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://design-system.demo.com" class="project-link" aria-label="Ver documentação" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                      <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Frontend</span>
+              <h3 class="project-title">Design System & Component Library</h3>
+              <p class="project-description">Biblioteca de componentes acessíveis, themeable e documentada com Storybook. 60+ componentes, tokens de design, dark mode nativo e testes visuais automatizados.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Storybook</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">Vitest</span>
+                <span class="tech-tag">Chromatic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-category="backend" tabindex="0">
+            <div class="project-image">
+              <img src="assets/images/project-3.jpg" alt="Microservices Architecture Platform" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/usuario/microservices-platform" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Backend</span>
+              <h3 class="project-title">Microservices Architecture Platform</h3>
+              <p class="project-description">Plataforma de microserviços com service mesh, observabilidade completa, circuit breakers, rate limiting e deploy blue-green automatizado em Kubernetes.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">gRPC</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">Istio</span>
+                <span class="tech-tag">Prometheus</span>
+                <span class="tech-tag">Grafana</span>
+                <span class="tech-tag">Jaeger</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal" data-category="fullstack" tabindex="0">
+            <div class="project-image">
+              <img src="assets/images/project-4.jpg" alt="Real-time Collaboration App" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/usuario/realtime-collab" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://collab.demo.com" class="project-link" aria-label="Ver demo ao vivo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Full Stack</span>
+              <h3 class="project-title">Real-time Collaboration Platform</h3>
+              <p class="project-description">Aplicação de colaboração em tempo real com edição simultânea, presença de usuários, comentários, versionamento e sincronização offline-first via CRDTs.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Yjs</span>
+                <span class="tech-tag">WebRTC</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Socket.io</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal" data-category="open-source" tabindex="0">
+            <div class="project-image">
+              <img src="assets/images/project-5.jpg" alt="Open Source CLI Tool" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/usuario/cli-tool" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://npmjs.com/package/@usuario/cli-tool" class="project-link" aria-label="Ver no NPM" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 6v6l4 2"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Open Source</span>
+              <h3 class="project-title">CLI Toolkit for Dev Productivity</h3>
+              <p class="project-description">Ferramenta de linha de comando para automação de tarefas repetitivas: scaffolding, linting, deploy, migrações e geração de documentação. 2.5k+ stars no GitHub.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Commander.js</span>
+                <span class="tech-tag">Inquirer</span>
+                <span class="tech-tag">Chalk</span>
+                <span class="tech-tag">ESLint</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal" data-category="frontend" tabindex="0">
+            <div class="project-image">
+              <img src="assets/images/project-6.jpg" alt="3D Portfolio Website" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/usuario/3d-portfolio" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://3d-portfolio.demo.com" class="project-link" aria-label="Ver demo ao vivo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Frontend</span>
+              <h3 class="project-title">Immersive 3D Portfolio Website</h3>
+              <p class="project-description">Portfolio interativo com Three.js, shaders customizados, partículas GPU, animações baseadas em scroll e performance otimizada para 60fps em dispositivos móveis.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">React Three Fiber</span>
+                <span class="tech-tag">GLSL</span>
+                <span class="tech-tag">GSAP</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">TypeScript</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience reveal" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-header reveal-left">
+          <span class="section-tag">04. EXPERIÊNCIA PROFISSIONAL</span>
+          <h2 class="section-title" id="experience-title">Minha jornada</h2>
+          <p class="section-description">Experiências que moldaram minha carreira e visão técnica</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <article class="timeline-item reveal-left stagger-1">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Senior Full Stack Developer</h3>
+                  <p class="timeline-company">TechCorp Solutions</p>
+                </div>
+                <time class="timeline-period" datetime="2022-03">Mar 2022 — Presente</time>
+              </div>
+              <p class="timeline-description">
+                Liderança técnica de squad de 6 desenvolvedores. Arquitetura e desenvolvimento de plataforma SaaS B2B com 10k+ usuários ativos.
+                Migração de monolito para microserviços, redução de 60% no tempo de deploy, implementação de observabilidade completa.
+              </p>
+              <div class="timeline-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">GraphQL</span>
+                <span class="tech-tag">AWS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 2 -->
+          <article class="timeline-item reveal-right stagger-2">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Full Stack Developer</h3>
+                  <p class="timeline-company">StartupXYZ</p>
+                </div>
+                <time class="timeline-period" datetime="2020-06">Jun 2020 — Fev 2022</time>
+              </div>
+              <p class="timeline-description">
+                Desenvolvimento full stack de produto EdTech do zero ao lançamento. Implementação de CI/CD, testes automatizados (80%+ coverage),
+                design system interno, otimização de Core Web Vitals (LCP < 1.5s). Crescimento de 0 para 50k usuários.
+              </p>
+              <div class="timeline-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Nuxt.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">GitLab CI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 3 -->
+          <article class="timeline-item reveal-left stagger-3">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Frontend Developer</h3>
+                  <p class="timeline-company">Digital Agency Pro</p>
+                </div>
+                <time class="timeline-period" datetime="2018-01">Jan 2018 — Mai 2020</time>
+              </div>
+              <p class="timeline-description">
+                Desenvolvimento de interfaces para clientes enterprise (bancos, varejo, saúde). Especialização em performance, acessibilidade (WCAG 2.1 AA),
+                PWA, SSR com Next.js. Mentoria de desenvolvedores júnior e code review de 200+ PRs.
+              </p>
+              <div class="timeline-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Styled Components</span>
+                <span class="tech-tag">Jest</span>
+                <span class="tech-tag">Cypress</span>
+                <span class="tech-tag">Storybook</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 4 -->
+          <article class="timeline-item reveal-right stagger-4">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Junior Developer (Estágio)</h3>
+                  <p class="timeline-company">InovaTech</p>
+                </div>
+                <time class="timeline-period" datetime="2017-07">Jul 2017 — Dez 2017</time>
+              </div>
+              <p class="timeline-description">
+                Primeiro contato com desenvolvimento profissional. Manutenção de sistemas legados, migração jQuery para Vue.js,
+                criação de componentes reutilizáveis, aprendizado de Git, testes unitários e metodologias ágeis.
+              </p>
+              <div class="timeline-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">Scrum</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact reveal" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header reveal-left">
+          <span class="section-tag">05. VAMOS CONVERSAR</span>
+          <h2 class="section-title" id="contact-title">Entre em contato</h2>
+          <p class="section-description">Estou sempre aberto a novas oportunidades, colaborações ou apenas um bom papo sobre tecnologia</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left stagger-1">
+            <p class="contact-intro">
+              Seja para discutir um projeto desafiador, uma vaga de Senior/Lead, mentoria ou apenas trocar ideias sobre arquitetura de software,
+              fique à vontade para me chamar. Respondo geralmente em menos de 24h.
+            </p>
+
+            <div class="contact-methods">
+              <a href="mailto:dev@email.com" class="contact-method">
+                <div class="method-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Email</span>
+                  <span class="method-value">dev@email.com</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/seuusuario" class="contact-method" target="_blank" rel="noopener noreferrer">
+                <div class="method-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">LinkedIn</span>
+                  <span class="method-value">linkedin.com/in/seuusuario</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/seuusuario" class="contact-method" target="_blank" rel="noopener noreferrer">
+                <div class="method-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">GitHub</span>
+                  <span class="method-value">github.com/seuusuario</span>
+                </div>
+              </a>
+
+              <a href="https://twitter.com/seuusuario" class="contact-method" target="_blank" rel="noopener noreferrer">
+                <div class="method-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Twitter / X</span>
+                  <span class="method-value">@seuusuario</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-social">
+              <a href="https://dev.to/seuusuario" class="social-link" aria-label="Dev.to" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v2h-2V7zm0 4h2v6h-2v-6z"/></svg>
+              </a>
+              <a href="https://stackoverflow.com/users/seuusuario" class="social-link" aria-label="Stack Overflow" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2.5-5.5h-1V15h1v-2.5zm0-5h-1v5h1v-5z"/></svg>
+              </a>
+              <a href="https://medium.com/@seuusuario" class="social-link" aria-label="Medium" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+              </a>
+              <a href="https://discord.gg/seuusuario" class="social-link" aria-label="Discord" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.675 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.007-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01 10.2 10.2 0 0 0 .373.292.077.077 0 0 1-.006.127 13.107 13.107 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.645.733 1.276 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.417-4.486-.429-9.016-3.554-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-container reveal-right stagger-2">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Nome</label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required autocomplete="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Assunto</label>
+                <select id="subject" name="subject" class="form-select form-input" required>
+                  <option value="">Selecione um assunto</option>
+                  <option value="project">Nova Oportunidade / Projeto</option>
+                  <option value="job">Vaga Senior / Lead</option>
+                  <option value="mentoring">Mentoria / Consultoria</option>
+                  <option value="collab">Colaboração Open Source</option>
+                  <option value="other">Outro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Conte sobre seu projeto, vaga ou ideia..." required minlength="20"></textarea>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  Enviar Mensagem
+                </button>
+              </div>
+              <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-brand">PORTFOLIO<span>.</span></div>
+      <p class="footer-copyright">© 2024 Desenvolvido com carinho e muito <span style="color: var(--cp-cyan);">cafe</span></p>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#hero" class="footer-link">Topo</a>
+        <a href="https://github.com/seuusuario/portfolio" class="footer-link" target="_blank" rel="noopener noreferrer">Código Fonte</a>
+        <a href="assets/files/cv.pdf" class="footer-link" download>CV</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"></path>
+    </svg>
+  </button>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-label="Notificações"></div>
+
+  <!-- Modal for Project Details -->
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Detalhes do Projeto</h3>
+        <button class="modal-close" id="modal-close" aria-label="Fechar modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('[SW] Registered:', reg.scope))
+          .catch(err => console.log('[SW] Registration failed:', err));
+      });
+    }
+  </script>
+
+  <!-- Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

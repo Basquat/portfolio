@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 425">
+  <defs>
+    <linearGradient id="proj1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d14" />
+      <stop offset="100%" style="stop-color:#1a0a2e" />
+    </linearGradient>
+    <linearGradient id="proj1Accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff" />
+      <stop offset="100%" style="stop-color:#ff00ff" />
+    </linearGradient>
+  </defs>
+  <rect width="680" height="425" fill="url(#proj1Bg)"/>
+  <rect x="2" y="2" width="676" height="421" fill="none" stroke="url(#proj1Accent)" stroke-width="2" rx="8"/>
+  <g fill="url(#proj1Accent)" opacity="0.2">
+    <rect x="60" y="60" width="180" height="20" rx="4"/>
+    <rect x="60" y="100" width="250" height="12" rx="3"/>
+    <rect x="60" y="130" width="300" height="12" rx="3"/>
+    <rect x="60" y="160" width="200" height="12" rx="3"/>
+    <rect x="60" y="200" width="560" height="160" rx="8" fill="none" stroke="url(#proj1Accent)" stroke-width="1"/>
+    <rect x="80" y="220" width="200" height="100" rx="4" fill="url(#proj1Accent)" opacity="0.3"/>
+    <rect x="300" y="220" width="200" height="100" rx="4" fill="url(#proj1Accent)" opacity="0.3"/>
+    <rect x="80" y="340" width="200" height="100" rx="4" fill="url(#proj1Accent)" opacity="0.3"/>
+    <rect x="300" y="340" width="200" height="100" rx="4" fill="url(#proj1Accent)" opacity="0.3"/>
+  </g>
+  <text x="340" y="395" font-family="Rajdhani, sans-serif" font-size="24" font-weight="700" fill="url(#proj1Accent)" text-anchor="middle" opacity="0.5">E-COMMERCE DASHBOARD</text>
+  <text x="340" y="415" font-family="JetBrains Mono, monospace" font-size="10" fill="#00ffff" text-anchor="middle" opacity="0.4">Next.js • TypeScript • PostgreSQL • Stripe</text>
+</svg>

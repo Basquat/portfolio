@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14141f" />
+      <stop offset="100%" style="stop-color:#0d0d14" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff" />
+      <stop offset="50%" style="stop-color:#ff00ff" />
+      <stop offset="100%" style="stop-color:#ffff00" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Grid pattern -->
+  <g stroke="#00ffff" stroke-width="0.5" opacity="0.1">
+    <path d="M0 0 L400 0 M0 0 L0 500" />
+    <g stroke-width="0.3">
+      <path d="M0 50 L400 50" />
+      <path d="M0 100 L400 100" />
+      <path d="M0 150 L400 150" />
+      <path d="M0 200 L400 200" />
+      <path d="M0 250 L400 250" />
+      <path d="M0 300 L400 300" />
+      <path d="M0 350 L400 350" />
+      <path d="M0 400 L400 400" />
+      <path d="M0 450 L400 450" />
+      <path d="M50 0 L50 500" />
+      <path d="M100 0 L100 500" />
+      <path d="M150 0 L150 500" />
+      <path d="M200 0 L200 500" />
+      <path d="M250 0 L250 500" />
+      <path d="M300 0 L300 500" />
+      <path d="M350 0 L350 500" />
+    </g>
+  </g>
+
+  <!-- Silhouette -->
+  <g fill="url(#accentGrad)" opacity="0.3">
+    <!-- Head -->
+    <ellipse cx="200" cy="140" rx="70" ry="85"/>
+    <!-- Neck -->
+    <rect x="165" y="225" width="70" height="30" rx="5"/>
+    <!-- Shoulders -->
+    <ellipse cx="200" cy="280" rx="130" ry="40"/>
+    <!-- Torso -->
+    <path d="M70 280 Q70 450 200 480 Q330 450 330 280 Z"/>
+  </g>
+
+  <!-- Circuit details -->
+  <g stroke="url(#accentGrad)" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M200 80 L200 110 M170 140 L230 140"/>
+    <path d="M120 180 L160 180 M240 180 L280 180"/>
+    <circle cx="200" cy="140" r="35" stroke-dasharray="10,5"/>
+    <path d="M200 225 L200 260 M170 250 L230 250"/>
+  </g>
+
+  <!-- Corner brackets -->
+  <g stroke="#00ffff" stroke-width="3" fill="none">
+    <path d="M30 30 L30 70 M30 30 L70 30"/>
+    <path d="M370 30 L330 30 M370 30 L370 70"/>
+    <path d="M30 470 L30 430 M30 470 L70 470"/>
+    <path d="M370 470 L330 470 M370 470 L370 430"/>
+  </g>
+
+  <!-- Scanlines -->
+  <g stroke="#000" stroke-width="0.5" opacity="0.1">
+    <path d="M0 0 L400 0" />
+    <path d="M0 4 L400 4" />
+    <path d="M0 8 L400 8" />
+    <path d="M0 12 L400 12" />
+    <path d="M0 16 L400 16" />
+    <path d="M0 20 L400 20" />
+    <path d="M0 24 L400 24" />
+    <path d="M0 28 L400 28" />
+    <path d="M0 32 L400 32" />
+    <path d="M0 36 L400 36" />
+    <path d="M0 40 L400 40" />
+    <path d="M0 44 L400 44" />
+    <path d="M0 48 L400 48" />
+    <path d="M0 52 L400 52" />
+    <path d="M0 56 L400 56" />
+    <path d="M0 60 L400 60" />
+  </g>
+
+  <!-- Placeholder text -->
+  <text x="200" y="460" font-family="JetBrains Mono, monospace" font-size="10" fill="#00ffff" text-anchor="middle" opacity="0.5">ADICIONE SUA FOTO EM assets/images/about-photo.jpg</text>
+</svg>
