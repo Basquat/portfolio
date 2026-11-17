@@ -3,12 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>João Daniel Lisboa // Backend Java</title>
+<title>João Daniel Lisboa // Desenvolvedor Backend Java · Spring Boot</title>
 <meta name="description" content="Portfolio de João Daniel de Cerqueira Lisboa — Desenvolvedor Backend Java, Spring Boot e APIs REST. Salvador, BA.">
 <meta name="theme-color" content="#050507">
 <meta name="color-scheme" content="dark">
-<meta property="og:title" content="João Daniel Lisboa // Backend Java">
-<meta property="og:description" content="Spring Boot, APIs REST, PostgreSQL. Sistemas reais em produção.">
+<meta property="og:title" content="João Daniel Lisboa // Desenvolvedor Backend Java">
+<meta property="og:description" content="Reduzi um endpoint de 25s para ~1s no PostgreSQL e coloquei em produção uma API Spring Boot com 61 testes. Currículo e projetos aqui.">
+<meta name="author" content="João Daniel de Cerqueira Lisboa">
+<link rel="canonical" href="https://basquat.github.io/portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://basquat.github.io/portfolio/">
+<meta property="og:image" content="https://basquat.github.io/portfolio/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="João Daniel Lisboa — Desenvolvedor Backend Java, Spring Boot">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"João Daniel de Cerqueira Lisboa","alternateName":"Basquat","jobTitle":"Desenvolvedor Backend Java","url":"https://basquat.github.io/portfolio/","address":{"@type":"PostalAddress","addressLocality":"Salvador","addressRegion":"BA","addressCountry":"BR"},"alumniOf":"UNIJORGE","knowsAbout":["Java","Spring Boot","Spring Security","PostgreSQL","APIs REST","Docker"],"sameAs":["https://github.com/Basquat","https://www.linkedin.com/in/jo%C3%A3o-daniel-de-cerqueira-lisboa-0184a7356"]}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23050507'/%3E%3Cpath d='M9 6h16v4h-6v12q0 4-5 4H8v-4h5V10H9z' fill='%23fcee0a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,18 +67,20 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;bac
 .bar nav a:hover,.bar nav a.on{color:var(--y)}
 .bar nav a.on::after{content:"";position:absolute;left:.75rem;right:.75rem;bottom:0;height:2px;background:var(--y);box-shadow:0 0 8px var(--y)}
 #clk{font:.85rem var(--m);color:var(--c);letter-spacing:.1em;flex:none;white-space:nowrap}
+.cvb{flex:none;font:700 .85rem var(--m);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;background:var(--y);color:#000;padding:.5rem .85rem;transition:background .15s}
+.cvb:hover{background:var(--c)}
 @media(max-width:960px){#clk{display:none}}
 @supports(animation-timeline:scroll()){
 .prog{position:fixed;top:58px;left:0;right:0;height:2px;z-index:41;background:var(--y);box-shadow:0 0 8px var(--y);transform:scaleX(0);transform-origin:0 50%;animation:pg linear both;animation-timeline:scroll(root)}
 @keyframes pg{to{transform:scaleX(1)}}}
 
 /* boot */
-#boot{position:fixed;inset:0;z-index:100;background:#000;display:grid;place-content:center;padding:24px;font:1rem/1.9 var(--m);color:var(--y);cursor:pointer;animation:out .5s 2.3s forwards}
-#boot p{opacity:0;animation:on .01s calc(var(--i)*.28s) forwards;white-space:nowrap}
+#boot{position:fixed;inset:0;z-index:100;background:#000;display:grid;place-content:center;padding:24px;font:1rem/1.9 var(--m);color:var(--y);cursor:pointer;animation:out .4s 1.4s forwards}
+#boot p{opacity:0;animation:on .01s calc(var(--i)*.18s) forwards;white-space:nowrap}
 #boot .ok{color:var(--c)}
-#boot small{display:block;color:var(--d);margin-top:1rem;opacity:0;animation:on .01s 1.4s forwards}
+#boot small{display:block;color:var(--d);margin-top:1rem;opacity:0;animation:on .01s .8s forwards}
 #boot i{display:block;height:4px;background:#222;margin-top:.8rem;position:relative;overflow:hidden}
-#boot i::after{content:"";position:absolute;inset:0;background:var(--y);transform:scaleX(0);transform-origin:0 0;animation:ld 2.1s linear forwards}
+#boot i::after{content:"";position:absolute;inset:0;background:var(--y);transform:scaleX(0);transform-origin:0 0;animation:ld 1.3s linear forwards}
 @keyframes on{to{opacity:1}}
 @keyframes ld{to{transform:scaleX(1)}}
 @keyframes out{to{opacity:0;visibility:hidden}}
@@ -250,6 +263,7 @@ html{scroll-behavior:auto}.js .rv{opacity:1;transform:none}#boot{display:none}.t
     <a href="#contato" data-n="05">Contato</a>
   </nav>
   <span id="clk" aria-hidden="true"></span>
+  <a class="cvb" href="Curriculo-Joao-Daniel-Lisboa.pdf" target="_blank" rel="noopener">CV · PDF</a>
 </header>
 <div class="prog" aria-hidden="true"></div>
 
@@ -261,7 +275,8 @@ html{scroll-behavior:auto}.js .rv{opacity:1;transform:none}#boot{display:none}.t
   <p class="role">Desenvolvedor Backend Java <span>//</span> Spring Boot &amp; APIs REST</p>
   <p class="lead">Entrego sistemas reais: reduzi um endpoint crítico de <b>25s para ~1s</b> no PostgreSQL e coloquei em produção um sistema de estacionamento com API REST, Arquitetura Hexagonal e <b>61 testes automatizados</b>.</p>
   <div class="cta">
-    <a class="btn f" href="#contratos">Ver contratos</a>
+    <a class="btn f" href="Curriculo-Joao-Daniel-Lisboa.pdf" target="_blank" rel="noopener">Baixar currículo · PDF</a>
+    <a class="btn cut" href="#contratos">Ver contratos</a>
     <a class="btn cut" href="#contato">Abrir canal</a>
   </div>
   <div class="stats rv">
@@ -457,6 +472,20 @@ html{scroll-behavior:auto}.js .rv{opacity:1;transform:none}#boot{display:none}.t
       <ul class="chips"><li>Spring Boot</li><li>Spring Security</li><li>JWT</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind</li><li>Docker</li></ul>
       <a class="btn f" href="https://github.com/Basquat/financeiro" target="_blank" rel="noopener">Ver no GitHub →</a>
     </article>
+    <article class="cut rv">
+      <span class="mono">Contrato #003 · app · Spring Boot + JWT</span>
+      <h3>Gestão de Restaurante</h3>
+      <p>Spring Boot, Spring Security e JWT com frontend React: <b style="color:var(--y)">autenticação e autorização por 2 perfis</b> (cliente e gerente), cadastro de pratos e pedidos e DTOs separando API e domínio. Testes de integração cobrem o fluxo completo de login e permissões.</p>
+      <div class="met"><div><b>2</b>perfis de acesso</div></div>
+      <ul class="chips"><li>Spring Boot</li><li>Spring Security</li><li>JWT</li><li>JPA · Hibernate</li><li>React</li></ul>
+      <a class="btn f" href="https://github.com/Basquat/Restaurante" target="_blank" rel="noopener">Ver no GitHub →</a>
+    </article>
+    <aside class="cut rv" style="--a:var(--c)">
+      <span class="mono">Fim da transmissão</span>
+      <h3>Gostou do que viu?</h3>
+      <p>Currículo de 1 página: resumo, experiência, stack e projetos, para ler em um minuto.</p>
+      <a class="btn f" href="Curriculo-Joao-Daniel-Lisboa.pdf" target="_blank" rel="noopener">Abrir currículo · PDF</a>
+    </aside>
   </div>
 </section>
 
@@ -465,9 +494,10 @@ html{scroll-behavior:auto}.js .rv{opacity:1;transform:none}#boot{display:none}.t
   <div class="term cut rv">
     <p class="dim">// canal aberto. aguardando transmissão...</p>
     <p class="cmd"><i>&gt;</i> contactar --alvo joao_daniel --assunto "vaga backend java"</p>
-    <a class="mail" href="mailto:joaodan.lisboa@gmail.com">joaodan.lisboa@gmail.com</a>
+    <a class="mail" href="mailto:joaodan.lisboa@gmail.com?subject=Vaga%20Backend%20Java">joaodan.lisboa@gmail.com</a>
     <div class="cta">
-      <a class="btn f" href="mailto:joaodan.lisboa@gmail.com">Enviar e-mail</a>
+      <a class="btn f" href="mailto:joaodan.lisboa@gmail.com?subject=Vaga%20Backend%20Java">Enviar e-mail</a>
+      <a class="btn cut" href="Curriculo-Joao-Daniel-Lisboa.pdf" target="_blank" rel="noopener">Currículo PDF</a>
       <button class="btn cut" id="cp" data-v="joaodan.lisboa@gmail.com">Copiar e-mail</button>
       <a class="btn cut" href="https://github.com/Basquat" target="_blank" rel="noopener">GitHub</a>
       <a class="btn cut" href="https://www.linkedin.com/in/jo%C3%A3o-daniel-de-cerqueira-lisboa-0184a7356" target="_blank" rel="noopener">LinkedIn</a>
